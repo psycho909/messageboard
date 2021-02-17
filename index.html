@@ -7,6 +7,17 @@
 		<title>留言板測試功能</title>
 		<script src="https://tw.hicdn.beanfun.com/jquery/jquery.min.js"></script>
 		<script src="https://tw.hicdn.beanfun.com/jquery/jquery-migrate.min.js"></script>
+		<script>
+			window.fbAsyncInit = function () {
+				FB.init({
+					appId: "1361927494169720",
+					autoLogAppEvents: true,
+					xfbml: true,
+					version: "v9.0",
+				});
+			};
+		</script>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js"></script>
 		<style>
 			* {
 				padding: 0;
@@ -18,7 +29,6 @@
 		<div id="app">
 			<h1>留言板測試功能</h1>
 			<div id="fb-root"></div>
-			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v9.0&appId=1361927494169720&autoLogAppEvents=1" nonce="vJw2MT3R"></script>
 			<div class="fb-comments" data-href="https://distracted-morse-42ffd6.netlify.app/" data-width="" data-numposts="5"></div>
 		</div>
 		<script></script>
